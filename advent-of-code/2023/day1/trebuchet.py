@@ -1,5 +1,8 @@
+import os
+base = os.environ["AOC_BASE"]
+
 # Read File
-path = "advent-of-code/2023/day1/sample"
+path = base + "/advent-of-code/2023/day1/sample"
 data = open(path , "r")
 lines = data.readlines()
 
