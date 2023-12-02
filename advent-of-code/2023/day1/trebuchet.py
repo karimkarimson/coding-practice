@@ -6,15 +6,6 @@ path = base + "/advent-of-code/2023/day1/sample"
 data = open(path , "r")
 lines = data.readlines()
 
-# function to find all occurences of a substring in a string
-# def find_all(string, substring):
-#     start = 0
-#     while True:
-#         start = string.find(substring, start)
-#         if start == -1: return
-#         yield start
-#         start += 1
-
 # Clean Up List of Strings
 iterator = 0
 numbersPerLine = []
