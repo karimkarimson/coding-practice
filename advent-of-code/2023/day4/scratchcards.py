@@ -11,6 +11,7 @@ sum2 = 0
 data = data.split("\n")
 
 winners = []
+winners2 = []
 for game, line in enumerate(data):
     matches = []
     sepGame = line.split(':')
@@ -33,8 +34,17 @@ for game, line in enumerate(data):
         if len(matches) > 1:
             point = (point + 1) ** (len(matches) - 1)
         winners.append(point)
+    
+    if len(matches) > 0:
+        winners2.append([game + 1 , 1])
+        if len(matches) > 2:
+            i = 0
+            while i < len(matches):
+
+
 
 for winner in winners:
     sum1 += winner
 
 print(sum1)
+print(sum2)
