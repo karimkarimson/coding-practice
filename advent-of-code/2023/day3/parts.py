@@ -31,7 +31,7 @@ for index_line, line in enumerate(data):
         if index_line > 0: graphs[-1].u = graphs[0 - (len(line) + 1)]
 
 for graph in graphs:
-        # now add right and down neighboors
+    # now add right and down neighboors
     if graph.l: graph.l.r = graph
     if graph.u: graph.u.d = graph
 
